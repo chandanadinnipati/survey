@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="survey.css" />
+    <script>
+        function showAlert() {
+            alert("Successfully submitted!");
+        }
+    </script>
+</head>
+<body >
+    <div class="main">
+    <div class="title">
+    <h1>Survey Form</h1>
+    <p id="descriptrion">This from is to give best traning according to the user requirement</p></div>
+    <div class="form">
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+
+            <label for="name">Name:</label>
+            <input id="name-label" name="name" type="text" placeholder="Rani" required><br>
+
+            <label for="email">Email:</label>
+            <input id="email-label" name="email" type="email" placeholder="rani@something.com" required><br>
+            <label for="number">Enter your phone number:</label>
+            <input id="number-label" type="tel" placeholder="123-45-678" min="7" max="10" required><br>
+            <label for="age">Age:</label>
+            <input id="age-label" name="age-label" type="number" min="18" max="100"
+                required><br>
+            <label>What best describes your current role?</label>
+            <select id="dropdown">
+                <option value="Student" selected>Student</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Employd Full Time">Employed Full Time</option>
+                <option value="Employed Part Time">Employed Part Time</option>
+            </select>
+            <label for="domine">Area intersted in :</label>
+            <input type="text" id="text"  name="area" placeholder="Ex:Data science">
+
+            <p>Programming Languages of Interests:</p>
+
+            <input type="checkbox" id="C++" value="C++" name="C++">
+            <label for="C++">C++</label><br>
+
+            <input type="checkbox" id="Java" value="Java" name="Java">
+            <label for="Java">Java</label><br>
+
+            <input type="checkbox" id="Pascal" value="Pascal" name="Pascal">
+            <label for="Pascal">Pascal</label><br>
+
+            <input type="checkbox" id="Ruby" value="Ruby" name="Ruby">
+            <label for="Ruby">Ruby</label><br>
+
+            <input type="checkbox" id="C#" value="C#" name="C#">
+            <label for="C#">C#</label><br>
+
+            <input type="checkbox" id="Python" name="Python" value="Python">
+            <label for="Python">Python</label><br>
+
+            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+            <label for>PHP</label><br>
+      
+            <label for="additional-info">Additional Information:</label><br>
+            <textarea id="additional-info" name="additional-info" rows="6" cols="50"
+                placeholder="Do you have anything else to add?"></textarea><br>
+        <button onclick="showAlert()">submit</button>
+
+    </form > </div></div></body>
+
+</html>
